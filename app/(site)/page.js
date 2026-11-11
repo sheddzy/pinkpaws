@@ -110,7 +110,7 @@ export default async function Home() {
           <h2>Talk to us about your organisation</h2>
           <p>Tell us what you are working on and we will come back to you through your preferred contact method.</p>
           <div className="row" style={{ justifyContent: 'center' }}>
-            <Link href="/contact#consultation" className="btn light">Request a consultation</Link>
+            <Link href="/contact#consultation" className="btn light">Book a consultation</Link>
             <Link href="/contact" className="btn outline-light">Send an enquiry</Link>
           </div>
         </div>

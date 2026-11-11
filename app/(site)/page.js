@@ -6,8 +6,8 @@ import { admin } from '@/lib/supabase';
 import Visual from '@/components/Visual';
 
 export const metadata = {
-  title: { absolute: 'Pink Paws Groomers | Business Consulting, Customer Service and Strategy in Lagos' },
-  description: 'Lekki based business consulting firm helping organisations strengthen customer service, develop people, set up businesses and NGOs, and plan sustainable growth.',
+  title: { absolute: 'Pink Paws Groomers | Customer Service, People Development and Strategy' },
+  description: 'Pink Paws Groomers helps organisations strengthen customer service, develop people, establish businesses and NGOs, and plan sustainable growth.',
   alternates: { canonical: '/' },
 };
 
@@ -26,8 +26,7 @@ export default async function Home() {
       <section className="hero">
         <div className="wrap">
           <div>
-            <p className="kicker">Business consulting, Lekki, Lagos</p>
-            <h1>{c.hero_headline}</h1>
+              <h1>{c.hero_headline}</h1>
             <p className="lede">{c.hero_text}</p>
             <div className="row" style={{ marginTop: 28 }}>
               <Link href="/services" className="btn light">Explore Our Services</Link>
@@ -70,7 +69,7 @@ export default async function Home() {
         <div className="wrap">
           <h2>Why work with Pink Paws</h2>
           <div className="grid g4" style={{ marginTop: 24 }}>
-            {[['Established in 2014', 'A consulting practice based in Lekki, Lagos, with more than a decade behind the name.'],
+            {[['Established in 2014', 'A consulting practice with more than a decade of experience behind the name.'],
               ['People at the centre', 'Better organisations come from capable, motivated people, so our work starts there.'],
               ['Clear and practical', 'Recommendations are written plainly so your team can act on them.'],
               ['A focused team', 'A small team that keeps the work close to the people who ask for it.']].map(([t, d]) => (

@@ -25,6 +25,9 @@ p{margin:0 0 1em;max-width:68ch}a{color:var(--plum2)}
 .hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--plum);font-family:var(--font-head);font-weight:700;font-size:1.2rem}
 .nav{display:flex;gap:26px;align-items:center}.nav a{text-decoration:none;color:var(--ink);font-weight:500}.nav a:hover,.nav a[aria-current=page]{color:var(--magenta)}
+/* Keep the header consultation CTA readable against its plum background */
+.nav a.btn{color:#fff;background:var(--plum);border-color:var(--plum)}
+.nav a.btn:hover{color:#fff;background:var(--magenta);border-color:var(--magenta)}
 .burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font:inherit;color:var(--plum)}
 @media(max-width:900px){.burger{display:block}.nav{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:20px 22px 26px;border-bottom:1px solid var(--line);gap:16px}.nav.open{display:flex}}
 /* hero */
@@ -75,7 +78,7 @@ textarea{min-height:130px;resize:vertical}.hp{position:absolute;left:-9999px;hei
 table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:.94rem}
 th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f6ebf1;color:var(--plum)}
 .scroll{overflow-x:auto}.pill{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.8rem;background:#eee;color:#333}
-.pill.sent,.pill.Completed{background:#d9f2e3;color:#14532d}.pill.failed{background:#fbdcdc;color:#7a1313}.pill.skipped,.pill.Closed{background:#ececec;color:#555}.pill.New{background:#fde0ee;color:#8c0c5c}.pill.Contacted,.pill.In\ Progress{background:#fff0c9;color:#6b5200}
+.pill.sent,.pill.Completed{background:#d9f2e3;color:#14532d}.pill.failed{background:#fbdcdc;color:#7a1313}.pill.skipped,.pill.Closed{background:#ececec;color:#555}.pill.New{background:#fde0ee;color:#8c0c5c}.pill.Contacted,.pill.In\\ Progress{background:#fff0c9;color:#6b5200}
 .bars div{display:grid;grid-template-columns:230px 1fr 34px;gap:10px;align-items:center;margin-bottom:8px;font-size:.92rem}.bars i{display:block;height:12px;background:var(--magenta);border-radius:6px}
 @media(max-width:640px){.bars div{grid-template-columns:120px 1fr 28px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

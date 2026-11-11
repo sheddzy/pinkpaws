@@ -60,7 +60,7 @@ export default function EnquiryForm({ kind = 'enquiry', defaultService = '' }) {
       <label htmlFor={id('subject')}>Subject{err('subject')}<input id={id('subject')} name="subject" required maxLength={150} defaultValue={consult ? 'Consultation request' : ''} /></label>
       <label htmlFor={id('msg')}>{consult ? 'What would you like to discuss?' : 'Your enquiry'}{err('message')}<textarea id={id('msg')} name="message" required maxLength={3000} /></label>
       <div className="hp" aria-hidden="true"><label>Leave this empty<input name="website" tabIndex={-1} autoComplete="off" /></label></div>
-      <div><button className="btn" type="submit" disabled={state.busy}>{state.busy ? 'Sending...' : consult ? 'Request consultation' : 'Send enquiry'}</button></div>
+      <div><button className="btn" type="submit" style={{ color: '#fff' }} disabled={state.busy}>{state.busy ? 'Sending...' : consult ? 'Request consultation' : 'Send enquiry'}</button></div>
     </form>
   );
 }
